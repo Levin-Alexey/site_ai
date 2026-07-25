@@ -1,0 +1,6 @@
+{
+  "name": "VK AI Agency",
+  "description": "Premium landing page for an AI agency building next-gen AI bots for VKontakte.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
