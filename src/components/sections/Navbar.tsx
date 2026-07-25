@@ -21,21 +21,21 @@ export default function Navbar() {
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-2 sm:px-3">
+    <nav className="fixed inset-x-0 top-0 z-50 px-3 py-4 sm:px-4 lg:px-6">
       <motion.div
         initial={{ opacity: 0, y: -18, scale: 0.985 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className={`max-w-[1064px] h-[60px] mx-auto px-[18px] sm:px-[28px] flex items-center justify-between gap-4 rounded-full shadow-[0_16px_40px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-colors duration-300 ${pastFirstScreen ? 'bg-black' : 'bg-transparent'}`}
+        className={`site-shell h-[58px] px-[14px] sm:h-[64px] sm:px-[24px] flex items-center justify-between gap-3 rounded-full shadow-[0_16px_40px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-colors duration-300 ${pastFirstScreen ? 'bg-black/90' : 'bg-white/12'}`}
       >
         <a href="#" className="flex items-center gap-2 shrink-0 whitespace-nowrap" aria-label="Главная">
-          <span className="font-medium text-[21px] sm:text-[24px] leading-none tracking-[-0.04em]">
+          <span className="font-medium text-[18px] leading-none tracking-[-0.04em] sm:text-[24px]">
             <span className="bg-gradient-to-r from-[#ffcd71] via-[#ff88f5] to-[#8ec1ff] bg-clip-text text-transparent">
               Neuron
             </span>
           </span>
           <span className="w-[2px] h-[27px] bg-white/90 shrink-0" />
-          <span className="text-white text-[21px] sm:text-[24px] leading-none font-bold tracking-[-0.08em]">
+          <span className="text-white text-[18px] leading-none font-bold tracking-[-0.08em] sm:text-[24px]">
             AI
           </span>
         </a>

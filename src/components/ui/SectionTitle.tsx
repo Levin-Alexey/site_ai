@@ -12,9 +12,9 @@ interface SectionTitleProps {
 
 export function SectionTitle({ badge, title, subtitle, alignment = 'center', className }: SectionTitleProps) {
   return (
-    <div className={cn("mb-16 md:mb-24 flex flex-col gap-4 relative z-10", alignment === 'center' ? 'items-center text-center' : 'items-start text-left', className)}>
+    <div className={cn("mb-14 md:mb-20 flex flex-col gap-4 relative z-10", alignment === 'center' ? 'items-center text-center' : 'items-start text-left', className)}>
       {badge && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -23,24 +23,24 @@ export function SectionTitle({ badge, title, subtitle, alignment = 'center', cla
           {badge}
         </motion.div>
       )}
-      
-      <motion.h2 
+
+      <motion.h2
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.1]"
+        className="text-[clamp(1.82rem,6.4vw,2.7rem)] font-black text-slate-900 tracking-tight leading-[1.08] sm:text-[clamp(2rem,3.2vw,3rem)]"
       >
         {title}
       </motion.h2>
-      
+
       {subtitle && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className={cn("text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-3xl", alignment === 'center' ? 'mx-auto' : '')}
+          className={cn("text-[clamp(0.95rem,3.8vw,1.12rem)] text-slate-500 font-medium leading-relaxed max-w-3xl", alignment === 'center' ? 'mx-auto' : '')}
         >
           {subtitle}
         </motion.div>

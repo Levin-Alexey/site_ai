@@ -207,13 +207,14 @@ export default function Architecture() {
     <>
       <section
         id="projects"
-        className="relative isolate overflow-hidden border-t border-slate-100 py-24 md:py-28 bg-[linear-gradient(180deg,#e7f3fb_0%,#ecf5f8_42%,#e8f1f4_100%)]"
+        className="relative isolate overflow-hidden border-t border-slate-100/35 bg-[linear-gradient(180deg,#e7f3fb_0%,#ecf5f8_42%,#e8f1f4_100%)] py-24 sm:py-28 lg:py-32"
       >
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-20 sm:h-24 bg-[linear-gradient(180deg,#e8f1f4_0%,rgba(232,241,244,0.64)_44%,rgba(232,241,244,0)_100%)]"></div>
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_14%_10%,rgba(255,255,255,0.45),transparent_34%),radial-gradient(circle_at_86%_20%,rgba(212,236,252,0.30),transparent_40%),radial-gradient(circle_at_78%_82%,rgba(191,226,251,0.24),transparent_44%)]"></div>
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_88%_74%_at_50%_42%,#000_60%,transparent_100%)]"></div>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(180deg,rgba(232,241,244,0)_0%,rgba(232,241,244,0.74)_54%,#e8f1f4_100%)]"></div>
 
-        <div id="portfolio" className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div id="portfolio" className="site-shell relative z-10">
           <div className="mx-auto mb-14 max-w-3xl text-center md:mb-20">
             <h2 className="mt-5 text-4xl font-black leading-[1.1] tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
               Наше портфолио проектов

@@ -3,7 +3,7 @@ import footerBg from '/files/bg/68015b04a2bc285f1bc99809_footer-bg.webp';
 
 export default function Footer() {
   return (
-    <footer id="footer" className="relative isolate bg-slate-50 pt-20 pb-10 overflow-hidden">
+    <footer id="footer" className="relative isolate overflow-hidden bg-slate-50 pt-20 pb-10 sm:pt-24">
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
           src={footerBg}
@@ -14,7 +14,9 @@ export default function Footer() {
         <div className="absolute inset-0 opacity-100 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_65%_at_50%_50%,#000_70%,transparent_100%)]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="section-fade-top fade-gold fade-soft"></div>
+
+      <div className="site-shell relative z-10">
         <div className="grid gap-6 md:grid-cols-4 mb-16">
           <div className="md:col-span-2 space-y-4 rounded-xl bg-[rgba(229,227,211,0.80)] p-10 backdrop-blur-[20px]">
             <span className="font-black text-2xl tracking-tight text-slate-900">{siteConfig.name}</span>

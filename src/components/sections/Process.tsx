@@ -60,10 +60,11 @@ export default function Process() {
 
   return (
     <section className="-mt-px pt-[calc(7rem+1px)] pb-28 bg-[linear-gradient(180deg,#e7dcc3_0%,#eef4ee_30%,#edf7fa_68%,#f8fbfc_100%)] relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-20 sm:h-24 bg-[linear-gradient(180deg,#e7dcc3_0%,rgba(231,220,195,0.68)_42%,rgba(231,220,195,0)_100%)]"></div>
       <div className="pointer-events-none absolute inset-x-0 top-0 h-52 bg-[linear-gradient(180deg,#e7dcc3_0%,rgba(231,220,195,0.88)_26%,rgba(233,227,206,0.46)_56%,transparent_100%)]"></div>
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_2%,rgba(168,142,85,0.23),transparent_36%),radial-gradient(circle_at_88%_8%,rgba(63,146,251,0.16),transparent_36%),radial-gradient(circle_at_90%_84%,rgba(63,146,251,0.10),transparent_34%)]"></div>
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_82%_68%_at_50%_40%,#000_60%,transparent_100%)]"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(180deg,rgba(248,251,252,0)_0%,rgba(242,248,250,0.72)_54%,#eff6f8_100%)]"></div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-[linear-gradient(180deg,rgba(248,251,252,0)_0%,rgba(240,247,250,0.66)_52%,#eff6f8_100%)]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle

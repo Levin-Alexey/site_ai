@@ -3,23 +3,26 @@ import problemBg from '/files/s2.webp';
 
 export default function Problem() {
   return (
-    <section className="relative isolate min-h-screen bg-[#0b1520] border-b border-slate-100 overflow-hidden flex items-center justify-center">
+    <section className="relative isolate flex min-h-[39svh] items-center justify-center overflow-hidden border-b border-slate-100 bg-[#0b1520] py-8 sm:min-h-[58svh] sm:py-9 lg:min-h-[62svh]">
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
           src={problemBg}
           alt=""
-          className="absolute left-1/2 top-1/2 min-w-[112%] min-h-[112%] -translate-x-1/2 -translate-y-[calc(50%-75px)] object-cover object-center opacity-100"
+          className="absolute inset-0 h-full w-full object-cover object-[46%_24%] opacity-100 sm:object-[50%_28%]"
         />
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="section-fade-top fade-beige fade-soft"></div>
+        <div className="absolute inset-0 bg-black/22 sm:bg-black/10"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_56%_42%_at_50%_52%,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0.2)_38%,rgba(0,0,0,0)_78%)] sm:bg-[radial-gradient(ellipse_50%_36%_at_50%_52%,rgba(0,0,0,0.2)_0%,rgba(0,0,0,0.12)_38%,rgba(0,0,0,0)_78%)]"></div>
         <div className="absolute inset-0 opacity-100 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_40%,#000_70%,transparent_100%)]"></div>
+        <div className="section-fade-bottom fade-clay fade-soft"></div>
       </div>
 
-      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="site-shell relative z-10 [--site-padding-inline:0.75rem] sm:[--site-padding-inline:clamp(1rem,2.4vw,2rem)]">
         <SectionTitle
           alignment="center"
           className="max-w-3xl mx-auto mb-0"
           title={<span className="text-white/95">Теряете клиентов из-за инфраструктуры, которая не масштабируется?</span>}
-          subtitle={<span className="text-[#a3f3fd]">AI агенты могут обрабатывать огромные потоки данных, но ручная обработка делает этот процесс неэффективным и ресурсоемким.</span>}
+          subtitle={<span className="text-[#a3f3fd] text-[clamp(1.06rem,4.25vw,1.3rem)] sm:text-[clamp(1.08rem,1.95vw,1.34rem)] max-w-[36ch] sm:max-w-none mx-auto block">AI агенты могут обрабатывать огромные потоки данных, но ручная обработка делает этот процесс неэффективным и ресурсоемким.</span>}
         />
       </div>
     </section>

@@ -76,7 +76,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="py-24 bg-slate-50"
+      className="relative overflow-hidden py-24 sm:py-28 lg:py-32 bg-slate-50"
       style={{
         backgroundImage: `url(${contactSectionBg}), url(${contactSectionBaseBg}), url(${contactSectionBaseBg})`,
         backgroundSize: '100% 45%, 100% 120%, 100% 120%',
@@ -84,7 +84,9 @@ export default function ContactForm() {
         backgroundPosition: 'center center, center 330%, center bottom',
       }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="section-fade-top fade-rose"></div>
+      <div className="section-fade-bottom fade-sand"></div>
+      <div className="site-shell max-w-4xl">
         <SectionTitle
           title="Рассчитать стоимость проекта"
           subtitle="Заполните форму, и мы свяжемся с вами для обсуждения задач и оценки бюджета."

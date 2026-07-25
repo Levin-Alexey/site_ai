@@ -69,11 +69,13 @@ const cases = [
 
 export default function UseCases() {
   return (
-    <section id="industries" className="relative isolate overflow-hidden border-t border-slate-100 py-32 bg-[linear-gradient(180deg,#e8f2f6_0%,#edf4f7_42%,#f5edf3_100%)]">
+    <section id="industries" className="relative isolate overflow-hidden border-t border-slate-100/35 py-24 sm:py-28 lg:py-32 bg-[linear-gradient(180deg,#e8f2f6_0%,#edf4f7_42%,#f5edf3_100%)]">
+      <div className="section-fade-top fade-cool"></div>
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_10%_12%,rgba(255,255,255,0.46),transparent_34%),radial-gradient(circle_at_88%_20%,rgba(194,226,249,0.24),transparent_42%),radial-gradient(circle_at_80%_84%,rgba(244,214,230,0.22),transparent_46%)]"></div>
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.045)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_88%_72%_at_50%_44%,#000_62%,transparent_100%)]"></div>
+      <div className="section-fade-bottom fade-rose"></div>
 
-      <div className="max-w-[92rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-shell">
         <div className="mb-16 md:mb-24 flex flex-col gap-4 relative z-10 items-center text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.1]">Решения под разные индустрии</h2>
           <div className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-3xl mx-auto">

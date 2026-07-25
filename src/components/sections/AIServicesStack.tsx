@@ -133,6 +133,7 @@ export default function AIServicesStack() {
   return (
     <section ref={sectionRef} className="ai-scroll-section" id="solutions">
       <div className="ai-scroll-grid" aria-hidden="true"></div>
+      <div className="ai-scroll-bottom-fade" aria-hidden="true"></div>
       <div className="ai-scroll-inner">
         <header className="ai-scroll-header">
           <div className="ai-scroll-actions">
