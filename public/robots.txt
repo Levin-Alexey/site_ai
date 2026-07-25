@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Host: ai.neuronai.pro
-Sitemap: https://ai.neuronai.pro/sitemap.xml
+Host: neuronai.pro
+Sitemap: https://neuronai.pro/sitemap.xml
