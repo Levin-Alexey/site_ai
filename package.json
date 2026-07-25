@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
+    "generate:logos": "node scripts/generate-logo-manifest.mjs",
+    "dev": "npm run generate:logos && vite --port=3000 --host=0.0.0.0",
+    "build": "npm run generate:logos && vite build",
     "preview": "vite preview --host 0.0.0.0 --port 7860",
     "start": "node server.js",
     "clean": "node -e \"import('node:fs').then((fs) => fs.rmSync('dist', { recursive: true, force: true }))\"",
