@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Button } from '../ui/button';
 import { ChevronRight, Play } from 'lucide-react';
-import heroVideo from '../../files/main.mp4';
+import heroVideo from '/files/main.mp4';
 
 export default function Hero() {
   const mainHeadline = 'AI агенты и боты нового поколения для бизнеса, которые ';

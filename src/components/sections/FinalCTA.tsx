@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import goldBg from '../../files/bg/gold.avif';
+import goldBg from '/files/bg/gold.avif';
 import { Button } from '../ui/button';
 
 export default function FinalCTA() {

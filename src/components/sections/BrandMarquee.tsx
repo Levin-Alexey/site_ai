@@ -1,6 +1,6 @@
 const logoModules = (import.meta as unknown as {
   glob: (pattern: string, options: { eager: boolean; import: string }) => Record<string, string>;
-}).glob('../../files/logo/*.{svg,png,jpg,jpeg,webp}', {
+}).glob('/files/logo/*.{svg,png,jpg,jpeg,webp}', {
   eager: true,
   import: 'default',
 });

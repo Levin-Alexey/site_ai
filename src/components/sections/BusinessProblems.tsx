@@ -1,7 +1,7 @@
-import f1 from '../../files/fases/f1.png';
-import f2 from '../../files/fases/f2.png';
-import f3 from '../../files/fases/f3.png';
-import f4 from '../../files/fases/f4.png';
+import f1 from '/files/fases/f1.png';
+import f2 from '/files/fases/f2.png';
+import f3 from '/files/fases/f3.png';
+import f4 from '/files/fases/f4.png';
 
 export default function BusinessProblems() {
   return (

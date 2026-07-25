@@ -1,12 +1,12 @@
 import { motion } from 'motion/react';
-import iconEducation from '../../files/icons/icon-ind-education.svg';
-import iconProServices from '../../files/icons/icon-ind-pro-services.svg';
-import iconRetail from '../../files/icons/icon-ind-retail.svg';
-import iconFinServices from '../../files/icons/icon-ind-fin-services.svg';
-import iconDataCloud from '../../files/icons/icon-data-cloud.svg';
-import iconService from '../../files/icons/icon-service.svg';
-import iconEng from '../../files/icons/icon-ind-eng.svg';
-import iconManufacturing from '../../files/icons/icon-ind-manufacturing.svg';
+import iconEducation from '/files/icons/icon-ind-education.svg';
+import iconProServices from '/files/icons/icon-ind-pro-services.svg';
+import iconRetail from '/files/icons/icon-ind-retail.svg';
+import iconFinServices from '/files/icons/icon-ind-fin-services.svg';
+import iconDataCloud from '/files/icons/icon-data-cloud.svg';
+import iconService from '/files/icons/icon-service.svg';
+import iconEng from '/files/icons/icon-ind-eng.svg';
+import iconManufacturing from '/files/icons/icon-ind-manufacturing.svg';
 
 const cases = [
   {

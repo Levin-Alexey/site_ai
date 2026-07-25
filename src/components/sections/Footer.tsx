@@ -1,5 +1,5 @@
 import { siteConfig } from '../../data/site';
-import footerBg from '../../files/bg/68015b04a2bc285f1bc99809_footer-bg.webp';
+import footerBg from '/files/bg/68015b04a2bc285f1bc99809_footer-bg.webp';
 
 export default function Footer() {
   return (

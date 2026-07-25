@@ -1,5 +1,5 @@
 import { SectionTitle } from '../ui/SectionTitle';
-import problemBg from '../../files/s2.webp';
+import problemBg from '/files/s2.webp';
 
 export default function Problem() {
   return (
