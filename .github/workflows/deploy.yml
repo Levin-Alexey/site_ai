@@ -3,7 +3,7 @@ name: Deploy site_ai directly on VDS
 on:
   push:
     branches:
-      - main  # Если рабочая ветка master — замените на master
+      - main  # Если ветка master — измените на master
 
 env:
   REGISTRY: ghcr.io
@@ -48,7 +48,7 @@ jobs:
 
       - name: Pull and Restart Docker Container
         run: |
-          cd /root/site_ai
+          cd /home/runner/site_ai
           git pull origin main
           docker compose pull
           docker compose up -d --remove-orphans
