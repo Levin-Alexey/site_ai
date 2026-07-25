@@ -3,7 +3,7 @@ import problemBg from '/files/s2.webp';
 
 export default function Problem() {
   return (
-    <section className="relative isolate flex min-h-[45svh] items-center justify-center overflow-hidden border-b border-slate-100 bg-[#0b1520] py-9 sm:min-h-[67svh] sm:py-10 lg:min-h-[71svh]">
+    <section className="relative isolate flex min-h-[48svh] items-center justify-center overflow-hidden border-b border-slate-100 bg-[#0b1520] py-10 sm:min-h-[72svh] sm:py-11 lg:min-h-[76svh]">
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
           src={problemBg}
