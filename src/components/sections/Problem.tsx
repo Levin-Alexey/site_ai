@@ -3,12 +3,12 @@ import problemBg from '/files/s2.webp';
 
 export default function Problem() {
   return (
-    <section className="relative isolate flex min-h-[48svh] items-center justify-center overflow-hidden border-b border-slate-100 bg-[#0b1520] py-10 sm:min-h-[72svh] sm:py-11 lg:min-h-[76svh]">
+    <section className="relative isolate flex min-h-[54svh] items-center justify-center overflow-hidden border-b border-slate-100 bg-[#0b1520] py-12 sm:min-h-[78svh] sm:py-12 lg:min-h-[84svh]">
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
           src={problemBg}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover object-[46%_24%] opacity-100 sm:object-[50%_28%]"
+          className="absolute inset-0 h-full w-full object-cover object-[46%_21%] opacity-100 sm:object-[50%_25%]"
         />
         <div className="section-fade-top fade-beige fade-soft h-[2.25rem] sm:h-[3rem] lg:h-[3.5rem]"></div>
         <div className="absolute inset-0 bg-black/22 sm:bg-black/10"></div>
