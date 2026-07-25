@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/site_ai:latest
+    container_name: site_ai_app
+    restart: always
+    ports:
+      - "127.0.0.1:7860:7860"
+    env_file:
+      - .env
