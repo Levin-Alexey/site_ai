@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Check, SendHorizontal } from 'lucide-react';
 import { SectionTitle } from './ui/SectionTitle';
-import contactSectionBg from '../files/bg/Global-Agent-Customer-logo-grid-background-Version-3.webp';
-import contactSectionBaseBg from '../files/bg/Education_Salesforce-for-Education_Marquee-Background_Version-1.webp';
+import contactSectionBg from '/files/bg/Global-Agent-Customer-logo-grid-background-Version-3.webp';
+import contactSectionBaseBg from '/files/bg/Education_Salesforce-for-Education_Marquee-Background_Version-1.webp';
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
