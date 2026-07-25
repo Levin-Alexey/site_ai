@@ -1,9 +1,9 @@
-name: Deploy site_ai to VDS
+name: Deploy site_ai directly on VDS
 
 on:
   push:
     branches:
-      - main  # Или master, если деплоишь из master
+      - main  # Если рабочая ветка master — замените на master
 
 env:
   REGISTRY: ghcr.io
@@ -39,22 +39,17 @@ jobs:
 
   deploy:
     needs: build-and-push
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
-      - name: Deploy via SSH
-        env:
-          SSHPASS: ${{ secrets.SERVER_PASSWORD }}
-          SERVER_HOST: ${{ secrets.SERVER_HOST }}
-          SERVER_USER: ${{ secrets.SERVER_USER }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_ACTOR: ${{ github.actor }}
+      - name: Log in to GHCR on VDS
         run: |
-          sudo apt-get update && sudo apt-get install -y sshpass
-          
-          sshpass -e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${SERVER_USER}@${SERVER_HOST} \
-            "cd /root/site_ai && \
-             echo ${GH_TOKEN} | docker login ghcr.io -u ${GH_ACTOR} --password-stdin && \
-             docker compose pull && \
-             docker compose up -d --remove-orphans && \
-             docker image prune -af"
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Pull and Restart Docker Container
+        run: |
+          cd /root/site_ai
+          git pull origin main
+          docker compose pull
+          docker compose up -d --remove-orphans
+          docker image prune -af
