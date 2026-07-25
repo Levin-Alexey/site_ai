@@ -3,7 +3,7 @@ name: Deploy site_ai to VDS
 on:
   push:
     branches:
-      - main  # Если рабочая ветка master — замини на master
+      - main  # Или master, если деплоишь из master
 
 env:
   REGISTRY: ghcr.io
@@ -42,10 +42,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy via native SSH / sshpass
+      - name: Deploy via SSH
+        env:
+          SSHPASS: ${{ secrets.SERVER_PASSWORD }}
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_ACTOR: ${{ github.actor }}
         run: |
           sudo apt-get update && sudo apt-get install -y sshpass
           
-          CMD="cd /root/site_ai && echo '${{ secrets.GITHUB_TOKEN }}' | docker login ghcr.io -u ${{ github.actor }} --password-stdin && export GITHUB_REPOSITORY_OWNER=\$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]') && docker compose pull && docker compose up -d --remove-orphans && docker image prune -af"
-          
-          sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "$CMD"
+          sshpass -e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${SERVER_USER}@${SERVER_HOST} \
+            "cd /root/site_ai && \
+             echo ${GH_TOKEN} | docker login ghcr.io -u ${GH_ACTOR} --password-stdin && \
+             docker compose pull && \
+             docker compose up -d --remove-orphans && \
+             docker image prune -af"
