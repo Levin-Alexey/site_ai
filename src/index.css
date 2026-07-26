@@ -152,6 +152,15 @@ body,
   --fade-rgb: 236 232 223;
 }
 
+/* Problem section: fade bands are exactly 2x thinner than defaults. */
+.problem-fade-top.section-fade-top {
+  height: calc(var(--fade-h-top-mobile) / 2) !important;
+}
+
+.problem-fade-bottom.section-fade-bottom {
+  height: calc(var(--fade-h-bottom-mobile) / 2) !important;
+}
+
 @media (min-width: 640px) {
   .section-fade-top {
     height: var(--fade-h-top-desktop);
@@ -159,6 +168,14 @@ body,
 
   .section-fade-bottom {
     height: var(--fade-h-bottom-desktop);
+  }
+
+  .problem-fade-top.section-fade-top {
+    height: calc(var(--fade-h-top-desktop) / 2) !important;
+  }
+
+  .problem-fade-bottom.section-fade-bottom {
+    height: calc(var(--fade-h-bottom-desktop) / 2) !important;
   }
 }
 

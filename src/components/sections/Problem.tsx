@@ -10,11 +10,11 @@ export default function Problem() {
           alt=""
           className="absolute inset-0 h-full w-full object-cover object-[46%_21%] opacity-100 sm:object-[50%_25%]"
         />
-        <div className="section-fade-top fade-beige fade-soft h-[1.125rem] sm:h-[1.5rem] lg:h-[1.75rem]"></div>
+        <div className="section-fade-top problem-fade-top fade-beige fade-soft"></div>
         <div className="absolute inset-0 bg-black/22 sm:bg-black/10"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_56%_42%_at_50%_52%,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0.2)_38%,rgba(0,0,0,0)_78%)] sm:bg-[radial-gradient(ellipse_50%_36%_at_50%_52%,rgba(0,0,0,0.2)_0%,rgba(0,0,0,0.12)_38%,rgba(0,0,0,0)_78%)]"></div>
         <div className="absolute inset-0 opacity-100 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_40%,#000_70%,transparent_100%)]"></div>
-        <div className="section-fade-bottom fade-clay fade-soft h-[1.25rem] sm:h-[1.625rem] lg:h-[1.95rem]"></div>
+        <div className="section-fade-bottom problem-fade-bottom fade-clay fade-soft"></div>
       </div>
 
       <div className="site-shell relative z-10 [--site-padding-inline:0.75rem] sm:[--site-padding-inline:clamp(1rem,2.4vw,2rem)]">
