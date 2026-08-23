@@ -26,8 +26,8 @@ export default function Footer() {
           </div>
 
           <div className="rounded-xl bg-[rgba(229,227,211,0.80)] p-10 backdrop-blur-[20px]">
-            <h4 className="font-bold text-slate-900 mb-4 uppercase tracking-widest text-sm">Отзывы о нашей работе</h4>
-            <div className="flex flex-nowrap items-center gap-4">
+            <h4 className="mb-4 text-center text-sm font-bold uppercase tracking-widest text-slate-900">Отзывы о нас</h4>
+            <div className="flex flex-nowrap items-center justify-center gap-4">
               <a
                 href="https://www.fl.ru/users/levin-am2/portfolio/"
                 target="_blank"
