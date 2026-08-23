@@ -26,14 +26,14 @@ export default function Footer() {
           </div>
 
           <div className="rounded-xl bg-[rgba(229,227,211,0.80)] p-10 backdrop-blur-[20px]">
-            <h4 className="font-bold text-slate-900 mb-4 uppercase tracking-widest text-sm">Отзывы</h4>
-            <div className="flex flex-wrap items-center gap-4">
+            <h4 className="font-bold text-slate-900 mb-4 uppercase tracking-widest text-sm">Отзывы о нашей работе</h4>
+            <div className="flex flex-nowrap items-center gap-4">
               <a
                 href="https://www.fl.ru/users/levin-am2/portfolio/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Портфолио на FL.ru"
-                className="flex h-20 w-20 items-center justify-center rounded-lg transition-transform duration-200 hover:scale-105 sm:h-24 sm:w-24"
+                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg transition-transform duration-200 hover:scale-105 sm:h-14 sm:w-14"
               >
                 <img src="/files/freelance_logo/fl.png" alt="FL.ru" className="h-full w-full object-contain" loading="lazy" decoding="async" />
               </a>
@@ -42,7 +42,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Профиль на Profi.ru"
-                className="flex h-20 w-20 items-center justify-center rounded-lg transition-transform duration-200 hover:scale-105 sm:h-24 sm:w-24"
+                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg transition-transform duration-200 hover:scale-105 sm:h-14 sm:w-14"
               >
                 <img src="/files/freelance_logo/profi.png" alt="Profi.ru" className="h-full w-full object-contain" loading="lazy" decoding="async" />
               </a>
