@@ -9,8 +9,13 @@ import Architecture from './components/sections/Architecture';
 import ContactForm from './components/ContactForm';
 import FinalCTA from './components/sections/FinalCTA';
 import Footer from './components/sections/Footer';
+import PriceList from './components/PriceList';
 
 export default function App() {
+  if (window.location.pathname === '/price-list' || window.location.pathname === '/price-list/') {
+    return <PriceList />;
+  }
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-blue-500/30 selection:text-blue-900 scroll-smooth">
       <Navbar />
