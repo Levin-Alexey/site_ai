@@ -47,9 +47,9 @@ export default function Footer() {
                 <img src="/files/freelance_logo/profi.png" alt="Profi.ru" className="h-full w-full object-contain" loading="lazy" decoding="async" />
               </a>
             </div>
-            <a href="/price-list" className="mt-5 block text-center text-sm font-semibold text-slate-900 underline underline-offset-4">
+            {/* <a href="/price-list" className="mt-5 block text-center text-sm font-semibold text-slate-900 underline underline-offset-4">
               Прайс-лист
-            </a>
+            </a> */}
           </div>
 
           <div className="rounded-xl bg-[rgba(229,227,211,0.80)] p-10 backdrop-blur-[20px]">
