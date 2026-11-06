@@ -15,7 +15,7 @@ Landing page for an AI agency focused on VKontakte automation, AI bots, and cust
 ## Stack
 
 - React 19
-- Vite 6
+- Vite 
 - TypeScript
 - Express static server for production container runtime
 
