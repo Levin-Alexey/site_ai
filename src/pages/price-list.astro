@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PriceList from '../components/PriceList';
+---
+
+<BaseLayout
+  title="Прайс-лист | NeuronAI"
+  description="Стоимость разработки сайтов, чат-ботов и AI-решений для бизнеса"
+>
+  <PriceList client:only="react" />
+</BaseLayout>

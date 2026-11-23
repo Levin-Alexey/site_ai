@@ -1,8 +1,9 @@
 import { motion } from 'motion/react';
-import goldBg from '/files/bg/gold.avif';
 import { Button } from '../ui/button';
 
 export default function FinalCTA() {
+  const goldBg = '/files/bg/gold.avif';
+
   return (
     <section
       className="relative overflow-hidden py-24 sm:py-28 lg:py-32"

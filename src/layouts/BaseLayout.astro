@@ -1,0 +1,51 @@
+---
+import '../index.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ru" data-font-theme="hybrid">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="yandex-verification" content="916c80f463b03d24" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>{title}</title>
+
+    <script is:inline>
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) break;
+        }
+        k = e.createElement(t);
+        a = e.getElementsByTagName(t)[0];
+        k.async = 1;
+        k.src = r;
+        a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=110875735', 'ym');
+
+      ym(110875735, 'init', {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/110875735" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <slot />
+  </body>
+</html>

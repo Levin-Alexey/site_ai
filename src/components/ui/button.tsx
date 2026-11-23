@@ -1,15 +1,18 @@
 import React from 'react';
 import { cn } from '../../lib/utils';
-import { motion } from 'motion/react';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface CommonButtonProps {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   size?: 'sm' | 'md' | 'lg' | 'xl';
-  href?: string;
   className?: string;
   children: React.ReactNode;
   icon?: React.ReactNode;
 }
+
+type ButtonProps = CommonButtonProps & (
+  | (React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string })
+  | (React.ButtonHTMLAttributes<HTMLButtonElement> & { href?: undefined })
+);
 
 export function Button({
   variant = 'primary',
@@ -39,16 +42,19 @@ export function Button({
   const combinedStyles = cn(baseStyles, variants[variant], sizes[size], className);
 
   if (href) {
+    const anchorProps = props as React.AnchorHTMLAttributes<HTMLAnchorElement>;
     return (
-      <a href={href} className={combinedStyles} {...props}>
+      <a href={href} className={combinedStyles} {...anchorProps}>
         {children}
         {icon && <span className="ml-2">{icon}</span>}
       </a>
     );
   }
 
+  const buttonProps = props as React.ButtonHTMLAttributes<HTMLButtonElement>;
+
   return (
-    <button className={combinedStyles} {...props}>
+    <button className={combinedStyles} {...buttonProps}>
       {children}
       {icon && <span className="ml-2">{icon}</span>}
     </button>

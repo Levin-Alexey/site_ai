@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
-import icon1 from '/files/stics/1.webp';
-import icon2 from '/files/stics/2.webp';
-import icon3 from '/files/stics/3.webp';
-import icon4 from '/files/stics/4.webp';
-import icon5 from '/files/stics/5.webp';
+const icon1 = '/files/stics/1.webp';
+const icon2 = '/files/stics/2.webp';
+const icon3 = '/files/stics/3.webp';
+const icon4 = '/files/stics/4.webp';
+const icon5 = '/files/stics/5.webp';
 
 const cards = [
   {

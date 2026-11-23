@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import App from '../App';
+---
+
+<BaseLayout
+  title="Автоматизация бизнеса на базе ИИ"
+  description="AI-агенты нового поколения, которые продают, консультируют и автоматизируют бизнес"
+>
+  <App client:only="react" />
+</BaseLayout>

@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import projectPreviewMp2 from '/files/portfolio/mp2.webp';
-import projectPreviewIm from '/files/portfolio/im.webp';
-import projectPreviewManagerAi from '/files/portfolio/managerAI.webp';
-import projectPreviewVoice from '/files/portfolio/voice.webp';
-import projectPreviewMed from '/files/portfolio/med.webp';
-import projectPreviewAssist from '/files/portfolio/assist.webp';
+const projectPreviewMp2 = '/files/portfolio/mp2.webp';
+const projectPreviewIm = '/files/portfolio/im.webp';
+const projectPreviewManagerAi = '/files/portfolio/managerAI.webp';
+const projectPreviewVoice = '/files/portfolio/voice.webp';
+const projectPreviewMed = '/files/portfolio/med.webp';
+const projectPreviewAssist = '/files/portfolio/assist.webp';
 
 const previewImages = [
   projectPreviewMp2,

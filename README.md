@@ -8,20 +8,20 @@ pinned: false
 app_port: 7860
 ---
 
-# VK AI Agency
+# NeuronAI
 
-Landing page for an AI agency focused on VKontakte automation, AI bots, and custom business workflows.
+Website for an AI agency focused on business automation, AI agents, and custom AI solutions.
 
 ## Stack
 
+- Astro
 - React 19
-- Vite 
 - TypeScript
 - Express static server for production container runtime
 
 ## Local Development
 
-Requirements: Node.js 20+
+Requirements: Node.js 22+
 
 Install dependencies:
 

@@ -12,7 +12,16 @@ const host = process.env.HOST || '0.0.0.0';
 app.use(express.static(distDir));
 
 app.get('*', (_request, response) => {
-  response.sendFile(path.join(distDir, 'index.html'));
+  const requestedPath = _request.path.replace(/^\/+|\/+$/g, '');
+  if (requestedPath) {
+    const routeIndex = path.join(distDir, requestedPath, 'index.html');
+    return response.sendFile(routeIndex, (error) => {
+      if (error) {
+        response.sendFile(path.join(distDir, 'index.html'));
+      }
+    });
+  }
+  return response.sendFile(path.join(distDir, 'index.html'));
 });
 
 app.listen(port, host, () => {

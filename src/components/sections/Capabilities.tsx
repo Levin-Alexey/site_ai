@@ -1,9 +1,9 @@
 import { motion } from 'motion/react';
-import icon1 from '/files/icons_m/augmentation-icon-1.png';
-import icon2 from '/files/icons_m/augmentation-icon-2.png';
-import icon3 from '/files/icons_m/augmentation-icon-3.png';
-import icon4 from '/files/icons_m/augmentation-icon-4.png';
-import icon5 from '/files/icons_m/augmentation-icon-5.png';
+const icon1 = '/files/icons_m/augmentation-icon-1.png';
+const icon2 = '/files/icons_m/augmentation-icon-2.png';
+const icon3 = '/files/icons_m/augmentation-icon-3.png';
+const icon4 = '/files/icons_m/augmentation-icon-4.png';
+const icon5 = '/files/icons_m/augmentation-icon-5.png';
 
 const capabilityCards = [
   {
