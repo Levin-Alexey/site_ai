@@ -16,7 +16,7 @@ export default function ContactForm() {
   });
   const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
 
-  const N8N_WEBHOOK_URL = 'https://integrations.busines-levin.workers.dev/hooks/site-main?secret=WEBHOOK_SECRET';
+  const N8N_WEBHOOK_URL = 'https://hooks.neuronai.pro/hooks/site-main?secret=WEBHOOK_SECRET';
 
   const features = [
     { id: 'rag', label: 'Умная база знаний' },
@@ -37,9 +37,6 @@ export default function ContactForm() {
 
       const response = await fetch(N8N_WEBHOOK_URL, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
         body: JSON.stringify({
           ...formData,
           selectedFeatures,
